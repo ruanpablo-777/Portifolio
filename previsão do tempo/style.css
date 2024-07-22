@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("https://random.imagecdn.app/500/150");
+    background-color: rgba(102, 102, 102, 0.705);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -51,7 +51,7 @@ div{
         background-position: center center;
         background-size: 20px;
         background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(167, 167, 167, 0.363);
         margin-left: 50px;
         box-shadow: inset 0px 0px 10px black;
         border-radius: 50%;
@@ -72,8 +72,12 @@ div{
 
     & img{
         width: 60px;
-        padding-left: 20px;
+       
         background-image: url(script.js);
+    }
+
+    & main {
+        display: flex;
     }
 
 }
