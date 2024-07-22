@@ -29,8 +29,9 @@ function buscarclima(){
         })
         
         
+        let nospace = search.value.trim()
         let key2 = "0de776d455fb8bc4ef0467a2ebf5dc57"
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=${key2}&units=metric&lang=pt_br`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nospace}&appid=${key2}&units=metric&lang=pt_br`)
         .then(response => response.json())
         .then(data => {   
             document.getElementById("city").innerText = data.name + ", " + data.sys.country
@@ -48,30 +49,3 @@ function buscarclima(){
 
 
 }
-
-        
-        
-        
-  
-    /*
-    import { createClient } from 'pexels';
-    
-    const client = createClient('   ps8Ix62YhT5nyhokyO1uHIBDWA2D97p7PWGuIhKuEKihpWzV80kg45Mv');
-    const query = 'Nature';
-    
-    client.photos.search({ query, per_page: 1 }).then(photos => photos.json())
-    .then(dat => {
-        console.log(dat)
-    })
-    */
-
-/*
-let key2 = 
-"ps8Ix62YhT5nyhokyO1uHIBDWA2D97p7PWGuIhKuEKihpWzV80kg45Mv"
-fetch(`https://api.pexels.com/v1/curated?page=2&per_page=40`)
-.then(response => response.json())
-.then(data => {
-    console.log(data)
-})
-
-*/
